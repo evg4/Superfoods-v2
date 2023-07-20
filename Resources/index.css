@@ -1,0 +1,189 @@
+* {
+  font-family: helvetica;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "intro intro intro intro intro intro"
+    "kale kale kale-img kale-img kale-img kale-img"
+    "blueberries-img blueberries-img blueberries-img blueberries-img blueberries blueberries"
+    "almonds almonds almonds-img almonds-img almonds-img almonds-img"
+    "remember remember remember learn-more learn-more learn-more"
+    "footer footer footer footer footer footer";
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  width: 100%;
+}
+
+img {
+  width: 200px;
+  margin: auto;
+}
+
+header h1 {
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 70px;
+}
+
+header {
+  /* grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 6; */
+  background-color: #88abc8;
+  display: flex;
+  align-items: center;
+  grid-area: header;
+}
+
+.intro {
+  /* grid-row-start: 2;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 6; */
+  background-color: grey;
+  color: white;
+  grid-area: intro;
+}
+
+.intro h2,
+.intro p {
+  margin: 20px;
+}
+
+.kale {
+  /*  grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 2; */
+  background-color: black;
+  color: white;
+  grid-area: kale;
+}
+
+.kale h2,
+.kale p {
+  margin: 20px;
+}
+
+.kale-img {
+  /* grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+  grid-column-end: span 4; */
+  background-image: url(Images/kale.jpg);
+  grid-area: kale-img;
+}
+
+.blueberries-img {
+  /* grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 4; */
+  background-image: url(Images/blueberries.jpg);
+  grid-area: blueberries-img;
+}
+
+.blueberries {
+  /* grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 5;
+  grid-column-end: span 2; */
+  background-color: black;
+  color: white;
+  grid-area: blueberries;
+}
+
+.blueberries h2,
+.blueberries p {
+  margin: 20px;
+}
+
+.almonds {
+  /* grid-row-start: 5;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 2; */
+  background-color: black;
+  color: white;
+  grid-area: almonds;
+}
+
+.almonds h2,
+.almonds p {
+  margin: 20px;
+}
+
+.almonds-img {
+  /* grid-row-start: 5;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+  grid-column-end: span 4; */
+  background-image: url(Images/almonds.jpg);
+  grid-area: almonds-img;
+}
+
+.remember {
+  /*  grid-row-start: 6;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 3; */
+  background-color: lightyellow;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  grid-area: remember;
+}
+
+.remember p {
+  margin: 20px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.remember h1 {
+  color: red;
+  text-align: center;
+}
+
+.remember img {
+  height: 100px;
+  width: auto;
+}
+
+.learn-more {
+  /* grid-row-start: 6;
+  grid-row-end: span 1;
+  grid-column-start: 4;
+  grid-column-end: span 3; */
+  background-color: grey;
+  color: white;
+  grid-area: learn-more;
+}
+
+.learn-more h2,
+.learn-more p {
+  margin: 20px;
+}
+
+footer {
+  /* grid-row-start: 7;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 6; */
+  background-color: #88abc8;
+  display: flex;
+  align-items: flex-end;
+  grid-area: footer;
+}
+
+footer p {
+  margin: 20px;
+}
